@@ -1,0 +1,14 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let pd of menuData">
+            <div class="menubox mt-3 mb-3">
+                <img title="{{pd.menuName}}" src="{{pd.menuImg}}">
+                <h1>{{pd.menuName}}</h1>
+                <p>{{pd.menuDetails}}</p>
+                <p>{{pd.menuDate | currency}}</p>
+                <br/>
+                <a class="odrbtn" [routerLink]="['/work',pd.id]"><i class="bi bi-bag-dash-fill"></i> Order</a>
+            </div>
+        </div>
+    </div>
+</div>

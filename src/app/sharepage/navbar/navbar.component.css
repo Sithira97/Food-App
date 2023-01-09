@@ -1,0 +1,9 @@
+.navbar-light .navbar-nav .active-link {
+    font-weight: bolder;
+    color: var(--primary-color) !important;
+    border-bottom: 0.2rem solid var(--primary-color);
+}
+
+.navbar-light .nav-link{
+    color: var(--secondary-color);
+}

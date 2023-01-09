@@ -1,0 +1,49 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-3">Think Food,  <br />
+            Think us </h1>
+        <a routerLink="work">Order Now <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <h1 class="mb-3">
+        I'm <span class="highlight1">Perera Foods</span>, based in <span class="highlight2">Sri Lanka</span>
+    </h1>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="introBox mt-5">
+                <h1><i class="bi bi-calendar-heart"></i></h1>
+                <p>Food with Passion</p>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            <div class="introBox mt-5">
+                <h1><i class="bi bi-chat-heart-fill"></i></h1>
+                <p>Fun in Every Bite</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="introBox mt-5">
+                <h1><i class="bi bi-emoji-heart-eyes"></i></h1>
+                <p>Food for your Mood</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 mb-4">
+    <h1 class="text-center mt-3">Top Selections</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let pd of menuData; index as i">
+            <div class="menubox" *ngIf="i<=3">
+                <img title="{{pd.menuName}}" src="{{pd.menuImg}}" />
+                <h1>{{pd.menuName}}</h1>
+                <p>{{pd.menuDate | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="work" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>
